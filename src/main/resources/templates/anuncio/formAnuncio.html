@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    
+      
+<head>
+	<meta charset="UTF8">
+	
+	<title>AnuncioApp</title>
+		
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="style/styleCss.css"/>
+</head>
+<body>
+
+	<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">AnunciosApp</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="cadastrarAnuncio" class="waves-effect waves-light btn"><i class="material-icons left">add_circle_outline</i>Cadastrar Anúncio</a></li>
+         <li><a href="relatorioAnuncio" class="waves-effect waves-light btn"><i class="material-icons left">filter_list</i>Lista de Anúncio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</br>
+</br>
+		       
+	<form class="container formEvento" method="post">
+			<h4>Cadastro de Anúncios: </h4>
+			<label>Nome do Anúncio: <input type="text" value ="" name="nome"/></label>
+			<label>Cliente: <input type="text" value ="" name="cliente"/></label>
+			<label>Data de Inicio: (Dia/Mês/Ano) <input type="date" value ="" name="dataInicio"/></label>
+			<label>Data de Termino: (Dia/Mês/Ano) <input type="date" value ="" name="dataTermino"/></label>
+			<label>Investimento por Dia:<input type="text" value ="0" name="investimentoDia"/></label>
+		<button class="waves-effect waves-light btn" type="submit">Salvar</button>
+	</br>
+	<th:block th:include="mensagemValidacao"></th:block>
+	</form>
+</body>
+
+</html>
