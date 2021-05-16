@@ -10,7 +10,8 @@
 - Spring Boot
 - DB H2
 - Java 11
+- Maven
 
 # Como compilar e executar o programa
-- Importa para a ide e executa a classe AnuncioappApplication.java
+- Importar o projeto maven para a IDE e executar a classe AnuncioappApplication.java
 - A aplicação vai rodar na porta 8080 
